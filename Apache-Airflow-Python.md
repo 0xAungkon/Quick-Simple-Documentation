@@ -104,9 +104,3 @@ Combine Airflow with Scrapy for efficient web scraping workflows:
 
 Apache Airflow is an excellent tool for managing data workflows. Whether you’re handling ETL processes, automating data pipelines, or integrating with web scrapers like Scrapy, Airflow simplifies the process. Ready to streamline your workflow management? Dive into Apache Airflow today!
 
-## **Feel free to reach out if you have any questions or need help getting started! 🚀**
-
-Contact Me Anytime:
-Github: https://0xaungkon.github.io/
-Linkedin: https://www.linkedin.com/in/aungkon-malakar/
-Facebook: https://www.facebook.com/0xAungkon/
