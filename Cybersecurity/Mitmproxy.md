@@ -1,4 +1,4 @@
-# What is M`itmproxy`?
+# What is Mitmproxy?
 
 `Mitmproxy` is an interactive, SSL/TLS-capable intercepting proxy. It allows users to inspect and modify HTTP and HTTPS traffic, making it a powerful tool for debugging, testing, and developing web applications.
 
