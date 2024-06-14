@@ -9,6 +9,7 @@ A Simplified & Quick Documentation Repository
 3.  [Mkdocs](./Python/MkDocs.md)
 4.  [Langchain+Gpt4all](Python/Langchain_Gpt4all.md)
 5.  [Loguru](Python/Loguru.md)
+6.  [Pandas](Python/Pandas.md)
 
 ### Git:
 
@@ -22,3 +23,4 @@ A Simplified & Quick Documentation Repository
 ### CyberSecurity Tools:
 
 1.  [Mitm-Proxy](Cybersecurity/Mitmproxy.md)
+2.  [Sherlock](Cybersecurity/Sherlock.md)

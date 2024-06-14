@@ -12,7 +12,6 @@
 ### Purpose of Loguru
 
 Loguru was created to address several limitations and complexities of Python's built-in logging module. Its primary goals include:
-
 - Providing an easier setup with minimal boilerplate code.
 - Offering more intuitive syntax for common logging tasks.
 - Enhancing the flexibility and configurability of logging outputs.
@@ -21,14 +20,14 @@ Loguru was created to address several limitations and complexities of Python's b
 
 There are several alternatives to Loguru for logging in Python. Here is a comparison table highlighting some of the key differences:
 
-| Feature                  | Loguru    | Python Logging | Logbook        | Structlog      |
-| ------------------------ | --------- | -------------- | -------------- | -------------- |
-| Ease of Setup            | Very Easy | Moderate       | Moderate       | Moderate       |
-| Async Support            | Yes       | Yes            | Yes            | Yes            |
-| Custom Handlers          | Yes       | Yes            | Yes            | Yes            |
-| Structured Logging       | Limited   | Limited        | Limited        | Excellent      |
-| Rotating File Handler    | Built-in  | Requires Setup | Requires Setup | Requires Setup |
-| Third-party Integrations | Limited   | Extensive      | Moderate       | Extensive      |
+| Feature               | Loguru        | Python Logging | Logbook       | Structlog     |
+|-----------------------|---------------|----------------|---------------|---------------|
+| Ease of Setup         | Very Easy     | Moderate       | Moderate      | Moderate      |
+| Async Support         | Yes           | Yes            | Yes           | Yes           |
+| Custom Handlers       | Yes           | Yes            | Yes           | Yes           |
+| Structured Logging    | Limited       | Limited        | Limited       | Excellent     |
+| Rotating File Handler | Built-in      | Requires Setup | Requires Setup| Requires Setup|
+| Third-party Integrations | Limited   | Extensive      | Moderate      | Extensive     |
 
 ### Why Use Loguru?
 
@@ -41,97 +40,97 @@ There are several alternatives to Loguru for logging in Python. Here is a compar
 
 To use Loguru, you need to install it first, and then you can set up and start logging with minimal code.
 
-### Installation
+#### Installation
 
-```
+```bash
 pip install loguru
 ```
 
-### Basic Usage
+#### Basic Usage
 
-**Import Loguru**
+1. **Import Loguru**
 
-**Log Messages**
+   ```python
+   from loguru import logger
+   ```
 
-**Advanced Configuration**
+2. **Log Messages**
 
-You can add file logging, set rotation, and other advanced configurations as follows:
+   ```python
+   logger.debug("This is a debug message")
+   logger.info("This is an info message")
+   logger.warning("This is a warning message")
+   logger.error("This is an error message")
+   logger.critical("This is a critical message")
+   ```
+
+3. **Advanced Configuration**
+
+   You can add file logging, set rotation, and other advanced configurations as follows:
+
+   ```python
+   logger.add("file.log", rotation="500 MB")  # Automatically rotate files when they reach 500 MB
+   ```
 
 ### Pros and Cons of Loguru
 
-### Pros
+#### Pros
 
 - **User-Friendly**: Easy to set up and use.
 - **Comprehensive**: Built-in features like log rotation and async logging.
 - **Flexible**: Easily customizable to suit different needs.
 
-### Cons
+#### Cons
 
 - **Learning Curve**: Some advanced features might require additional learning.
 - **Third-party Integrations**: Fewer integrations compared to the built-in logging module.
 
 ### Example Usage Step by Step
 
-**Basic Logging**
+1. **Basic Logging**
 
-**Logging with Variables**
+   ```python
+   from loguru import logger
 
-**File Logging with Rotation**
+   logger.info("This is an info message")
+   ```
 
-**Custom Formatting**
+2. **Logging with Variables**
 
-**Handling Exceptions**
+   ```python
+   name = "Alice"
+   age = 30
+   logger.info("User {name} is {age} years old", name=name, age=age)
+   ```
+
+3. **File Logging with Rotation**
+
+   ```python
+   from loguru import logger
+
+   logger.add("app.log", rotation="1 week", retention="10 days")
+   logger.info("This will be logged to a file with rotation")
+   ```
+
+4. **Custom Formatting**
+
+   ```python
+   logger.add("custom.log", format="{time} - {level} - {message}")
+   logger.info("This is a custom formatted log message")
+   ```
+
+5. **Handling Exceptions**
+
+   ```python
+   def divide(a, b):
+       try:
+           return a / b
+       except ZeroDivisionError as e:
+           logger.exception("Exception occurred")
+
+   divide(5, 0)
+   ```
 
 ### Conclusion
 
 Loguru is a powerful and user-friendly logging library for Python that simplifies many aspects of logging. Its ease of setup, flexibility, and intuitive syntax make it a valuable tool for both beginners and experienced developers. While it has fewer third-party integrations than some alternatives, its built-in features and straightforward configuration make it a compelling choice for many applications.
-
-```python
-def divide(a, b):
-    try:
-        return a / b
-    except ZeroDivisionError as e:
-        logger.exception("Exception occurred")
-
-divide(5, 0)
-```
-
-```python
-logger.add("custom.log", format="{time} - {level} - {message}")
-logger.info("This is a custom formatted log message")
-```
-
-```python
-from loguru import logger
-
-logger.add("app.log", rotation="1 week", retention="10 days")
-logger.info("This will be logged to a file with rotation")
-```
-
-```python
-name = "Alice"
-age = 30
-logger.info("User {name} is {age} years old", name=name, age=age)
-```
-
-```python
-from loguru import logger
-
-logger.info("This is an info message")
-```
-
-```python
-logger.add("file.log", rotation="500 MB")  # Automatically rotate files when they reach 500 MB
-```
-
-```python
-logger.debug("This is a debug message")
-logger.info("This is an info message")
-logger.warning("This is a warning message")
-logger.error("This is an error message")
-logger.critical("This is a critical message")
-```
-
-```python
-from loguru import logger
-```
