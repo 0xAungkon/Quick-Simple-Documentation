@@ -10,6 +10,7 @@ A Simplified & Quick Documentation Repository
 4.  [Langchain+Gpt4all](Python/Langchain_Gpt4all.md)
 5.  [Loguru](Python/Loguru.md)
 6.  [Pandas](Python/Pandas.md)
+7.  [Flask](Python/Flask.md)
 
 ### Git:
 
