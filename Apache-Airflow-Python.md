@@ -1,4 +1,3 @@
-### Today, I want to share something amazing for anyone dealing with data workflows – Apache Airflow. If you manage data pipelines, this tool can make your life a lot easier. 🛠️
 
 ### What is Apache Airflow? 🤔
 
