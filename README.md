@@ -2,13 +2,17 @@
 
 A Simplified & Quick Documentation Repository
 
-## Python:
+### Python:
 
 1.  [SQLAlchemy](Python/SQLAlchemy.md)
 2.  [Tortoise-ORM](/Python/Tortoise-ORM.md)
 3.  [Mkdocs](./Python/MkDocs.md)
 4.  [Langchain+Gpt4all](Python/Langchain_Gpt4all.md)
 5.  [Loguru](Python/Loguru.md)
+
+### Git:
+
+1.  [Git-Reference](Git/Git-Reference.md)
 
 ### Docker:
 
