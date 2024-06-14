@@ -54,7 +54,7 @@ sudo systemctl status docker
 
 ### **On Windows/Mac**
 
-1.  Download Docker Desktop from Docker's official website. ()
+1.  Download Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop/).
 2.  Run the installer and follow the installation steps.
 3.  Verify installation by running `**docker --version**` in your command prompt.
 
