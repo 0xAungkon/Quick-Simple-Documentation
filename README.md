@@ -6,7 +6,8 @@ A Simplified & Quick Documentation Repository
 
 1.  [SQLAlchemy](./Python/SQLAlchemy.md)
 2.  [Tortoise-ORM](/Python/Tortoise-ORM.md)
+3.  [Mkdocs](./Python/MkDocs.md)
 
 ### Docker:
 
-1.  [Docker 101](./Docker/Docker 101.md)
+1.  [Docker 101](./Docker/Docker-101.md)
