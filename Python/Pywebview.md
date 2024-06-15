@@ -1,4 +1,4 @@
-## Pywebview in Python
+# Pywebview in Python
 
 ### What is Pywebview?
 
@@ -17,25 +17,28 @@ Pywebview was created to bridge the gap between web technologies and desktop app
 
 There are several alternatives to Pywebview for creating desktop applications using web technologies:
 
-| Feature                  | Pywebview             | Electron              | PyQtWebEngine         | Tauri                 |
-|--------------------------|-----------------------|-----------------------|-----------------------|-----------------------|
-| **Language**             | Python                | JavaScript/TypeScript | Python                | Rust, JavaScript      |
-| **Web Engine**           | WebKit/Chromium       | Chromium              | WebEngine (Chromium)  | WebKit/Chromium       |
-| **Cross-Platform**       | Yes                   | Yes                   | Yes                   | Yes                   |
-| **Size**                 | Lightweight           | Heavy                 | Moderate              | Lightweight           |
-| **Ease of Use**          | Easy                  | Moderate              | Moderate              | Moderate              |
-| **Performance**          | Good                  | High                  | Good                  | High                  |
-| **Integration**          | Moderate              | Excellent             | Excellent             | Good                  |
+
+| Feature            | Pywebview       | Electron              | PyQtWebEngine        | Tauri            |
+| -------------------- | ----------------- | ----------------------- | ---------------------- | ------------------ |
+| **Language**       | Python          | JavaScript/TypeScript | Python               | Rust, JavaScript |
+| **Web Engine**     | WebKit/Chromium | Chromium              | WebEngine (Chromium) | WebKit/Chromium  |
+| **Cross-Platform** | Yes             | Yes                   | Yes                  | Yes              |
+| **Size**           | Lightweight     | Heavy                 | Moderate             | Lightweight      |
+| **Ease of Use**    | Easy            | Moderate              | Moderate             | Moderate         |
+| **Performance**    | Good            | High                  | Good                 | High             |
+| **Integration**    | Moderate        | Excellent             | Excellent            | Good             |
 
 ### Why Use Pywebview?
 
 **Pros:**
+
 - **Cross-Platform:** Runs on Windows, macOS, and Linux.
 - **Lightweight:** Minimal overhead compared to heavier alternatives like Electron.
 - **Python Integration:** Easily integrates with Python code.
 - **Simplicity:** Easy to set up and use with basic knowledge of HTML, CSS, and JavaScript.
 
 **Cons:**
+
 - **Limited Features:** Not as feature-rich as Electron.
 - **Performance:** May not be as performant as native applications or Electron for complex applications.
 - **Community and Support:** Smaller community compared to more popular alternatives like Electron.
@@ -45,10 +48,10 @@ There are several alternatives to Pywebview for creating desktop applications us
 #### Step-by-Step Example
 
 1. **Install Pywebview:**
+
    ```sh
    pip install pywebview
    ```
-
 2. **Create a Basic Application:**
 
    ```python
@@ -73,19 +76,20 @@ There are several alternatives to Pywebview for creating desktop applications us
        create_window()
        webview.start()
    ```
-
 3. **Run the Application:**
+
    ```sh
    python your_script_name.py
    ```
-
 4. **Advanced Usage:**
+
    - **Loading a URL:**
+
      ```python
      webview.create_window('Pywebview Example', 'https://www.example.com')
      ```
-
    - **Exposing Python Functions to JavaScript:**
+
      ```python
      import webview
 
@@ -97,8 +101,8 @@ There are several alternatives to Pywebview for creating desktop applications us
      webview.create_window('Pywebview Example', 'https://www.example.com', js_api=api)
      webview.start()
      ```
-
    - **Customizing the Window:**
+
      ```python
      webview.create_window('Pywebview Example', 'https://www.example.com', width=800, height=600, resizable=False)
      webview.start()
@@ -107,3 +111,13 @@ There are several alternatives to Pywebview for creating desktop applications us
 ### Conclusion
 
 Pywebview is a powerful tool for Python developers who want to leverage their web development skills to create desktop applications. While it may not have all the features of more robust frameworks like Electron, its simplicity and lightweight nature make it a great choice for many projects.
+
+
+
+## Feel free to reach out if you have any questions or need help getting started!
+
+Github: [https://0xaungkon.github.io/](https://0xaungkon.github.io/)
+
+Linkedin: [https://www.linkedin.com/in/aungkon-malakar/](https://www.linkedin.com/in/aungkon-malakar/)
+
+Facebook: [https://www.facebook.com/0xAungkon/](https://www.facebook.com/0xAungkon/)
